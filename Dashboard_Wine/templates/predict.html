@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container fluid">
+        <center>
+            <form method="POST" action="http://127.0.0.1:5000/result">
+            <h5>
+                <span>Alcohol</span>
+                <input type="number" name="Alcohol" step="0.001" min="5" 
+                max="15" placeholder="Input Alcohol" required/>
+            </h5>
+
+            <h5>
+                <span>Density</span>
+                <input type="number" name="Density" step="0.001" min="0" 
+                max="2" placeholder="Input Density" required/>
+            </h5>
+
+            <h5>
+                <span>fixed acidity level</span><br>
+                <input type="radio" id="low" name="fal" value="low">
+                <label for="low">Low</label><br>
+                <input type="radio" id="medium" name="fal" value="medium">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="high" name="fal" value="high">
+                <label for="medium">High</label><br>
+            </h5>
+
+            <h5>
+                <span>chlorides level</span><br>
+                <input type="radio" id="low" name="cl" value="low">
+                <label for="low">Low</label><br>
+                <input type="radio" id="medium" name="cl" value="medium">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="high" name="cl" value="high">
+                <label for="medium">High</label><br>
+            </h5>
+        
+            <br><br>
+
+            </form>
+        </center>
+    </div>
+</body>
+</html>
